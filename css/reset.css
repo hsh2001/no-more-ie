@@ -13,15 +13,6 @@ body, html, div, section, footer {
   margin: 0;
 }
 
-table {
-  width: 100%;
-}
-
-th {
-  font-weight: 400;
-  text-align: left;
-}
-
 p {
   display: block;
   padding: .5rem;

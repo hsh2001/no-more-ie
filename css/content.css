@@ -55,6 +55,14 @@ footer {
   margin: 3.25rem auto 0 auto;
 }
 
+.grid-item-first {
+  -ms-grid-column: 1;
+}
+
+.grid-item-second {
+  -ms-grid-column: 2;
+}
+
 #title-container {
   background: #66abd7;
   background: linear-gradient(90deg, #accee3, #249be7);
