@@ -1,0 +1,39 @@
+html {
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+head {
+  display: none;
+}
+
+body, html, div, section, footer {
+  display: block;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  font-weight: 400;
+  text-align: left;
+}
+
+p {
+  display: block;
+  padding: .5rem;
+  margin: .5rem;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+hr {
+  border: 0;
+  border-bottom: 2px solid #dcdcdc;
+}
