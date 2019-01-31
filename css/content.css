@@ -4,8 +4,12 @@
   text-align: center;
 }
 
+.hidden {
+  display: none;
+}
+
 .container {
-  max-width: 550px;
+  max-width: 650px;
   margin: auto;
   padding: .5rem;
 }
@@ -76,6 +80,12 @@ footer {
   font-weight: 800;
   font-size: 1.75em;
   text-align: center;
+}
+
+#ie-info {
+  background: #f74f36;
+  color: white;
+  border-color: black;
 }
 
 #github-icon {

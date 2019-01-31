@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/content.css?" />
     <link rel="stylesheet" href="css/button.css" />
 
+    <script src="js/query.js"></script>
+    <script src="js/date.js"></script>
+
     <title>NO MORE IE</title>
   </head>
   <body>
@@ -20,6 +23,21 @@
       </div>
     </div>
 
+    <section id="ie-info" class="container page">
+      <p>
+        당신은 <b>Internet Explorer
+        <span id="ie-version">??</span></b>으로
+        이 사이트에 접속하셨습니다.
+        <span id="old-browser" class="hidden">
+          이 프로그램은
+          <span id="browser-last-update-date">??</span>간
+          업데이트가 진행되지 않은 오래된 프로그램입니다.
+          최신 기술 미지원 및 보안 취약점을 지닐 수 있어
+          해커의 공격 대상이 될 수 있습니다!
+        </span>
+      </p>
+    </section>
+
     <section class="container page">
       <div class="container">
         <p class="container sub-title">
@@ -29,10 +47,7 @@
         <p>
           Internet Explorer(인터넷 익스플로러)는
           마이크로소프트에서 개발한 <b>웹 브라우저</b>입니다.
-          웹 브라우저란, 월드 와이드 웹을 기반으로 한 인터넷의
-          콘텐츠를 검색 및 열람하기 위한
-          응용 프로그램입니다.
-          쉽게 말해, '인터넷에 접속하기 위한 도구'입니다.
+          웹 브라우저란 쉽게 말해 '인터넷에 접속하기 위한 도구'입니다.
           대게 '인터넷 = 인터넷 익스플로러 (위의 저 아이콘)'
           으로 잘못 알려지는 경우가 많은데,
           인터넷 익스플로러 역시 인터넷에 접속하기 위한 도구에
@@ -46,17 +61,15 @@
         <img class="icon" src="img/iconmonstr-edge-1-240.png" alt="엣지" />
         <p>
           2015년 초, 윈도우 10의 공개 행사와 함께
-          인터넷 익스플로러를 대체할 차세대 브라우저
-          '마이크로소프트 엣지'(Microsoft Edge)를 공개하였습니다.
+          인터넷 익스플로러를 대체할 차세대 브라우저를 공개하였습니다.
           이에 따라 인터넷 익스플로러는
-          (일부 보안 업데이트를 제외하고는)
           기능 업데이트가 진행되지 않게 되며
           더 이상 새로운 기능을 제공하지 않습니다.
           따라서
           인터넷 익스플로러 11을 마지막으로
           업데이트가 된 적이 없기 때문에
           지금도 인터넷 익플로러를 사용한다는 것은
-          4년 전의 기술을 아직까지 사용하고 있는 셈입니다.
+          <span id="year-diff-ie11">4</span>년 전의 기술을 아직까지 사용하고 있는 셈입니다.
         </p>
 
         <p class="container sub-title">
@@ -178,9 +191,8 @@
     <section class="container page">
       <p class="sub-title">의견을 남겨주세요.</p>
       <div class="container">
-        <div id="disqus_thread"></div>
+        <div id="disqus_thread">댓글을 불러오는 중...</div>
       </div>
-      <script async src="js/disqus.js"></script>
     </section>
     <footer>
       <p>
@@ -193,5 +205,8 @@
            alt="깃허브"
            onclick="window.open('https://github.com/tmdgus0084/no-more-ie', '_blank')" />
     </footer>
+
+    <script async src="js/disqus.js"></script>
+    <script async src="js/check-browser.js"></script>
   </body>
 </html>
