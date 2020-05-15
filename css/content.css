@@ -11,11 +11,11 @@
 .container {
   max-width: 650px;
   margin: auto;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .sub-title {
-  margin: .5rem auto;
+  margin: 0.5rem auto;
   border-bottom: 2px solid #dcdcdc;
   font-size: 1.25rem;
   font-weight: 800;
@@ -29,14 +29,14 @@ p {
 section.page {
   width: 90%;
   border: 2px solid #dcdcdc;
-  padding: 1rem .5rem 1rem .5rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
   margin: 1rem auto;
 }
 
 img.icon {
   width: 30%;
   max-width: 125px;
-  margin: .5rem auto;
+  margin: 0.5rem auto;
 }
 
 footer {

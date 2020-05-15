@@ -6,7 +6,11 @@ head {
   display: none;
 }
 
-body, html, div, section, footer {
+body,
+html,
+div,
+section,
+footer {
   display: block;
   padding: 0;
   border: 0;
@@ -15,8 +19,8 @@ body, html, div, section, footer {
 
 p {
   display: block;
-  padding: .5rem;
-  margin: .5rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
 }
 
 img {

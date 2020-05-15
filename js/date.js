@@ -1,3 +1,5 @@
-Date.now = Date.now || function () {
-  return (new Date()).getTime();
-}
+Date.now =
+  Date.now ||
+  function () {
+    return new Date().getTime();
+  };
