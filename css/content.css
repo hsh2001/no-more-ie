@@ -84,6 +84,7 @@ footer {
 }
 
 #ie-info {
+  display: none;
   background: #f74f36;
   color: white;
   border-color: black;

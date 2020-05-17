@@ -29,9 +29,7 @@ function arrayToDate(arr) {
 var ieVer = getIEVersion();
 var now = new Date();
 
-if (!ieVer) {
-  $id("ie-info").style.display = "none";
-} else {
+if (ieVer) {
   var lastUpdateDate = arrayToDate(
     {
       "7": [2009, 3, 1],
@@ -41,6 +39,7 @@ if (!ieVer) {
       "11": [2015, 1, 21],
     }[ieVer]
   );
+  $id("ie-info").style.display = "block";
   $id("ie-version").innerHTML = ieVer;
   $id("old-browser").className = "";
   if (lastUpdateDate) {
